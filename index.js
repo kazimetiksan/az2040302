@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.get('/api/hello', async (req, res) => {
 
     const somekey = process.env.APPSETTING_somekey
-    res.send(JSON.stringify(process.env))
+    res.send('somekey='+somekey)
 })
 
 app.get('/api/merhaba', (req, res) => {
